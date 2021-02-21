@@ -43,14 +43,17 @@ def pretty_print_description(w, ph, descrip):
 
 
 def main():
-    word = input("Enter word: ")
-    tp = get_description(word)
-    if  len(tp) == 3:
-        pretty_print_description(tp[0], tp[1], tp[2])
-    else:
-        print(tp)
+    word = "1"
+    while word != "0":
+        word = input("Enter word(or enter '0' and put 'Enter' for EXIT): ")
+        tp = get_description(word)
+        if  len(tp) == 3 and word != "0":
+            pretty_print_description(tp[0], tp[1], tp[2])
+        elif len(tp) != 3 and word != "0":
+            print(tp)
+        else:
+            print("Good luck, my friend")
 
 
 if __name__ == "__main__":
-    while True:
         main()
