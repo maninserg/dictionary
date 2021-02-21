@@ -1,6 +1,6 @@
 import json
 from difflib import get_close_matches
-
+from phonemizer import phonemize
 
 data = json.load(open("dictionary.json"))
 
@@ -22,8 +22,13 @@ def get_description(w):
         return "The word doesn't exist. Please double check it"
 
 
+def get_phonetic(w):
+        return phonemize(w,backend="espeak")
+
+
 def main():
     word = input("Enter word: ")
+    print(get_phonetic(word))
     print(get_description(word))
 
 if __name__ == "__main__":
