@@ -1,2 +1,12 @@
 # dictionary
-The english dictionary for linux terminal
+
+
+**About:** The english dictionary for linux terminal
+
+<hr>
+
+**Description:**
+
+<hr>
+
+
