@@ -1,7 +1,7 @@
 # dictionary
 
 
-**About:** The english dictionary for linux terminal
+**About:** The offline english dictionary for linux terminal
 
 <hr>
 
