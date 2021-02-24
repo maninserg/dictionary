@@ -1,7 +1,9 @@
 import json
+from phonemizer import phonemize
+import shutil
 
 
-def get_available_keys_for_verb(v, d):
+def get_available_keys_for_phrasal_verb(v, d):
     list_keys = list(d[v].keys())
     list_keys_key = []
     for key in list_keys:
@@ -12,7 +14,7 @@ def get_available_keys_for_verb(v, d):
     return list_keys, list_keys_key
 
 
-def get_article_for_verb(v, k, d):
+def get_article_for_phrasal_verb(v, k, d):
     dict_article = {}
     for i, ki in enumerate(k[0]):
         if len(k[1][i]) == 0 and isinstance(d[v][ki], list):
@@ -30,8 +32,25 @@ def get_article_for_verb(v, k, d):
                 for item in m:
                     flat_list.append(item)
             dict_article[ki] = flat_list
-    print(dict_article)
+    return dict_article
 
+def pretty_print_article_phrasal_verb(v, dict_article):
+    width = shutil.get_terminal_size().columns
+    title = "{} - /{}/".format(v, "prononce")
+    border = "=" * len(title)
+    print(border.center(width))
+    print(title.center(width))
+    print(border.center(width))
+    print("")
+    for key in dict_article:
+        if isinstance(dict_article[key], list):
+            str_inf = " -*- ".join(dict_article[key])
+            print(" {} : {}".format(key.upper(), str_inf))
+        else:
+            print(" {} : {}".format(key.upper(), dict_article[key]))
+    print("")
+    print("+" * width)
+    print("")
 
 
 def main():
@@ -40,8 +59,9 @@ def main():
     while verb != "0":
         verb = input("Enter word(or enter '0' and put 'Enter' for EXIT): ")
         if  not verb.isdigit():
-            keys = get_available_keys_for_verb(verb, data)
-            get_article_for_verb(verb, keys, data)
+            keys = get_available_keys_for_phrasal_verb(verb, data)
+            dict_article = get_article_for_phrasal_verb(verb, keys, data)
+            pretty_print_article_phrasal_verb(verb, dict_article)
         elif verb.isdigit() and verb == "0":
             print("Good luck, my friend")
 
