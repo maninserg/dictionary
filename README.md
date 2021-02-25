@@ -31,7 +31,7 @@
 
     (.venv) $ `pip install -r requirements.txt`
     
-6. Install espeak for your linux system:
+6. Install espeak for your linux system, for Debian linux systems use following command:
 
     $ sudo apt-get install espeak
 
