@@ -9,6 +9,37 @@
 
 <hr>
 
+<b>Installation for Linux*:</b>
+
+1. Clone the repository (or download the zip file and extract it):
+
+    $ `git clone git@github.com:maninserg/dictionary.git`
+
+2. Go to the directory of the program:
+   
+    $ `cd <your name of directory with the program>`
+
+3. Create of a virtual environment:
+
+    $ `python3 -m venv .venv`
+
+4. Activate the virtual environment:
+
+    $ `source .venv/bin/activate`
+
+5. Install necessary packages using pip according to the requirements.txt file from a directory with the program:
+
+    (.venv) $ `pip install -r requirements.txt`
+    
+6. Install espeak for your linux system:
+
+    $ sudo apt-get install espeak
+
+<i>*The installation for MacOS or Windows can be other</i>
+
+
+<hr>
+
 **License:** 
 
 Webster's Unabridged English Dictionary text file is licensed by "The Gutenberg Project's licensing" and you can download it from <a href="http://www.gutenberg.org/"> the Gutenberg Project</a>.
