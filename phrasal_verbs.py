@@ -34,9 +34,12 @@ def get_article_for_phrasal_verb(v, k, d):
             dict_article[ki] = flat_list
     return dict_article
 
-def pretty_print_article_phrasal_verb(v, dict_article):
+def get_phonetic(w):
+        return phonemize(w,backend="espeak")
+
+def pretty_print_article_phrasal_verb(v, pronon, dict_article):
     width = shutil.get_terminal_size().columns
-    title = "{} - /{}/".format(v, "prononce")
+    title = "{} - /{}/".format(v, pronon)
     border = "=" * len(title)
     print(border.center(width))
     print(title.center(width))
@@ -61,7 +64,8 @@ def main():
         if  not verb.isdigit():
             keys = get_available_keys_for_phrasal_verb(verb, data)
             dict_article = get_article_for_phrasal_verb(verb, keys, data)
-            pretty_print_article_phrasal_verb(verb, dict_article)
+            pronon = get_phonetic(verb)
+            pretty_print_article_phrasal_verb(verb, pronon, dict_article)
         elif verb.isdigit() and verb == "0":
             print("Good luck, my friend")
 
