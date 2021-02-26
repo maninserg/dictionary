@@ -1,7 +1,7 @@
 # dictionary
 
 
-**About:** The offline english dictionary for linux terminal and the dictionary of english phrasal verbs
+**About:** The offline english dictionary and the dictionary of english phrasal verbs for linux terminal
 
 <hr>
 
