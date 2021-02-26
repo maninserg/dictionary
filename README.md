@@ -37,6 +37,14 @@
 
 <i>*The installation for MacOS or Windows can be other</i>
 
+<hr>
+
+**Sreenshots:**
+
+<p align="center">
+  <img width = "600" src="screenshots/dictionary.png"/>
+<p align="center"><b>The work of the dictionary in the linux terminal</b><p align="center">
+</p>
 
 <hr>
 
