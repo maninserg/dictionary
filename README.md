@@ -39,7 +39,7 @@
 
 <hr>
 
-**Sreenshots:**
+**Screenshots:**
 
 <p align="center">
   <img width = "1000" src="screenshots/dictionary.png"/>
