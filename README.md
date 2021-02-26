@@ -42,7 +42,7 @@
 **Sreenshots:**
 
 <p align="center">
-  <img width = "800" src="screenshots/dictionary.png"/>
+  <img width = "1000" src="screenshots/dictionary.png"/>
 <p align="center"><b>The work of the dictionary in the linux terminal</b><p align="center">
 </p>
 
