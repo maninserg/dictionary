@@ -1,15 +1,13 @@
 # dictionary
 
+The offline english dictionary and the dictionary of english phrasal verbs for linux terminal
 
-**About:** The offline english dictionary and the dictionary of english phrasal verbs for linux terminal
+## Description
 
-<hr>
+The advantage of this program is that there is no need for an Internet connection and graphical environment. For the getting an English transcription the program uses the package <a href="https://github.com/bootphon/phonemizer">"phonemizer"</a> with her backend "espeak".
 
-**Description:** The advantage of this program is that there is no need for an Internet connection and graphical environment. For the getting an English transcription the program uses the package <a href="https://github.com/bootphon/phonemizer">"phonemizer"</a> with her backend "espeak".
 
-<hr>
-
-<b>Installation for Linux*:</b>
+## Installation for Linux*
 
 1. Clone the repository (or download the zip file and extract it):
 
@@ -37,18 +35,15 @@
 
 <i>*The installation for MacOS or Windows can be other</i>
 
-<hr>
-
-**Screenshots:**
+## Screenshots
 
 <p align="center">
   <img width = "1000" src="screenshots/dictionary.png"/>
 <p align="center"><b>The work of the dictionary in the linux terminal</b><p align="center">
 </p>
 
-<hr>
 
-**License:** 
+## License 
 
 Webster's Unabridged English Dictionary text file is licensed by "The Gutenberg Project's licensing" and you can download it from <a href="http://www.gutenberg.org/"> the Gutenberg Project</a>.
 I used the parsed dictionary in json format taken from the repository https://github.com/matthewreagan/WebstersEnglishDictionary (GPLv2 License).
